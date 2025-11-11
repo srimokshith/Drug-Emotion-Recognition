@@ -1,10 +1,10 @@
-# Emotion Recognition in Drug Reviews
+# Drug Emotion Analysis
 
-Jupyter notebook for emotion recognition in drug reviews: uses BioBERT/RoBERTa/BERT ensemble for emotion analysis, T5/PEGASUS for summarization, detects side effects, provides drug recommendations. Includes baseline ML models, visualizations, and interactive analysis.
+Jupyter notebook for analyzing user emotions in drug reviews: detects how patients feel after taking medications using transformer ensemble, provides summarization, side-effect detection, and drug recommendations. Includes baseline ML models, visualizations, and interactive analysis.
 
 ## Features
 
-- **Emotion Analysis**: Multi-model ensemble (BioBERT, RoBERTa, BERT) for detecting 8 core emotions (hope, trust, fear, frustration, joy, sadness, anger, surprise)
+- **Emotion Analysis**: Multi-model ensemble (BioBERT, RoBERTa, BERT) for detecting 8 core emotions in drug reviews (hope, trust, fear, frustration, joy, sadness, anger, surprise)
 - **Text Summarization**: T5 and PEGASUS models for generating concise review summaries
 - **Side-Effect Detection**: Heuristic-based extraction of medication side effects from review text
 - **Drug Recommendation**: Emotion-aware recommender system matching user reviews to suitable medications
@@ -15,18 +15,18 @@ Jupyter notebook for emotion recognition in drug reviews: uses BioBERT/RoBERTa/B
 
 ## How It Works
 
-This Jupyter notebook provides a comprehensive pipeline for analyzing emotions in pharmaceutical reviews:
+This Jupyter notebook provides a comprehensive pipeline for analyzing user emotions in drug reviews:
 
 1. **Data Preparation**: Loads and cleans drug review datasets, applies sampling for performance
 2. **Baseline Modeling**: Trains classical ML models (Logistic Regression, SVM) for drug classification
-3. **Emotion Detection**: Uses transformer ensemble to analyze emotional content in reviews
+3. **Emotion Detection**: Uses transformer ensemble to analyze how users feel after taking medications
 4. **Summarization**: Generates abstractive summaries using T5 and extractive summaries using PEGASUS
 5. **Side-Effect Extraction**: Identifies potential medication side effects through keyword matching
 6. **Recommendation Engine**: Provides personalized drug recommendations based on emotional similarity
 7. **Visualization**: Creates plots for emotion distributions, model performance, and side-effect analysis
 8. **Interactive Interface**: Allows users to input custom reviews for real-time analysis and recommendations
 
-The system combines traditional machine learning with modern transformer models for comprehensive drug review analysis.
+The system combines traditional machine learning with modern transformer models for comprehensive analysis of patient experiences with medications.
 
 ## Installation
 
@@ -97,14 +97,32 @@ print(emotions)
 
 ## Dataset
 
-The notebook is designed to work with drug review datasets containing:
-- Review text
-- Drug names
-- Medical conditions
-- User ratings
-- Review usefulness counts
+The notebook uses a drug review dataset from Kaggle (https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview) containing patient experiences with medications. The dataset includes:
 
-Expected input format: CSV file with columns for patient_id, drugName, condition, review, rating, etc.
+- Review text describing user experiences and emotions after taking drugs
+- Drug names and medical conditions
+- User ratings and review usefulness counts
+- Patient IDs and review dates
+
+Expected input format: CSV file with columns for patient_id, drugName, condition, review, rating, date, usefulCount, etc.
+
+The analysis focuses specifically on understanding patient emotions and sentiments related to medication experiences.
+
+## Platform Requirements
+
+This system is designed to run on platforms with sufficient computational resources for transformer model inference:
+
+### Recommended Hardware:
+- **GPU**: P100 or T4 x2 (tested and verified to work perfectly fine with P100)
+- **RAM**: 16GB+ system RAM
+- **Storage**: Sufficient space for model downloads (~5-10GB)
+
+### Software Requirements:
+- Python 3.8+
+- PyTorch 2.0+ with CUDA support
+- CUDA-compatible GPU drivers
+
+The notebook has been tested and performs optimally on GPU-enabled environments. CPU-only execution is possible but significantly slower.
 
 ## License
 
