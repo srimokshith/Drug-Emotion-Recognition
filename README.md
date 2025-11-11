@@ -32,8 +32,8 @@ The system combines traditional machine learning with modern transformer models 
 
 1. Clone this repository:
 ```bash
-git clone https://github.com/srimokshith/Emotion-Recognition.git
-cd emotion-recognition
+git clone https://github.com/srimokshith/Drug-Emotion-Recognition.git
+cd drug-emotion-recognition
 ```
 
 2. Install dependencies:
