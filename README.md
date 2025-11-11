@@ -97,7 +97,7 @@ print(emotions)
 
 ## Dataset
 
-The notebook uses a drug review dataset from Kaggle (https://www.kaggle.com/datasets/mohamedabdelwahabali/drugreview) containing patient experiences with medications. The dataset includes:
+The notebook uses a drug review dataset from Kaggle (https://www.kaggle.com) containing patient experiences with medications. The dataset includes:
 
 - Review text describing user experiences and emotions after taking drugs
 - Drug names and medical conditions
