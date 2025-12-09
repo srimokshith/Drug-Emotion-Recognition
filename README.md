@@ -130,7 +130,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Disclaimer
 
-See [DISCLAIMER.md](DISCLAIMER.md) for important usage notices and limitations.
+See [DISCLAIMER.md](DISCLAIMER.md) for important usage notices and limitations
 
 ## Contact
 
