@@ -135,7 +135,7 @@ See [DISCLAIMER.md](DISCLAIMER.md) for important usage notices and limitations
 ## Contact
 
 For questions or contributions:
-- **Phone**: +91 9392597727
+- **Phone**: +91  9392597727
 - **Email**: srimokshithinturi@gmail.com
 
 ## Contributing
