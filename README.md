@@ -1,6 +1,6 @@
 # Drug Emotion Analysis
 
-Jupyter notebook for analyzing user emotions in drug reviews: detects how patients feel after taking medications using transformer ensemble, provides summarization, side-effect detection, and drug recommendations. Includes baseline ML models, visualizations, and interactive analysis.
+Jupyter notebook for analyzing user emotions in drug reviews: detects how patients feel after taking medications using transformer ensemble, provides summarization, side-effect detection, and drug recommendations. Includes baseline ML models, visualizations, and interactive analysis..
 
 ## Features
 
